@@ -23,8 +23,7 @@ export function SmoothScrollProvider({ children }: PropsWithChildren): JSX.Eleme
 
     const lenis = new Lenis({
       duration: 1.2,
-      smoothWheel: true,
-      smoothTouch: false
+      smoothWheel: true
     });
 
     setLenisInstance(lenis);

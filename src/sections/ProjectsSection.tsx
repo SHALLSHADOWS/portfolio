@@ -80,6 +80,7 @@ export function ProjectsSection(): JSX.Element {
             const copy = t(project.translationKey, {
               returnObjects: true
             }) as { title: string; subtitle: string; result: string };
+            const media = project.media;
 
             return (
               <RevealCard
@@ -87,10 +88,10 @@ export function ProjectsSection(): JSX.Element {
                 index={index}
                 className="flex h-full flex-col gap-5"
               >
-                {project.media?.cover ? (
+                {media?.cover ? (
                   <div className="overflow-hidden rounded-xl border border-white/10 shadow-glow">
                     <img
-                      src={resolveAsset(project.media.cover)}
+                      src={resolveAsset(media.cover)}
                       alt={`${copy.title} preview`}
                       className="h-48 w-full object-cover"
                       loading="lazy"
@@ -113,21 +114,21 @@ export function ProjectsSection(): JSX.Element {
                     </span>
                   ))}
                 </div>
-                {project.media ? (
+                {media ? (
                   <div className="mt-4 flex flex-wrap gap-3">
-                    {project.media.gallery?.length ? (
+                    {media.gallery?.length ? (
                       <button
                         type="button"
-                        onClick={() => openPreview(copy.title, project.media)}
+                        onClick={() => openPreview(copy.title, media)}
                         className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-white transition hover:border-emerald-300/50 hover:bg-white/10"
                       >
                         <Eye className="h-3.5 w-3.5" />
                         {t("projects.cta.preview")}
                       </button>
                     ) : null}
-                    {project.media.figmaUrl ? (
+                    {media.figmaUrl ? (
                       <a
-                        href={project.media.figmaUrl}
+                        href={media.figmaUrl}
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-slate-950 transition hover:bg-slate-200"
