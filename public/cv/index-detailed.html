@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV détaillé — Lem Israel Aroukoume</title>
+    <meta
+      name="description"
+      content="Version détaillée du curriculum vitæ de Lem Israel Aroukoume — ingénieur full-stack spécialisé en solutions web, mobiles et APIs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg-body: #050a1f;
+        --bg-page: linear-gradient(180deg, #191439 0%, #14102f 100%);
+        --bg-card: rgba(39, 33, 78, 0.85);
+        --bg-card-light: rgba(59, 49, 115, 0.6);
+        --border: rgba(92, 86, 180, 0.4);
+        --text-primary: #f8f9ff;
+        --text-muted: #cbd5f5;
+        --text-soft: rgba(203, 213, 245, 0.7);
+        --accent: #60a5fa;
+        --accent-strong: #22d3ee;
+      }
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at 15% 10%, rgba(96, 165, 250, 0.35), transparent 40%),
+          radial-gradient(circle at 85% 0%, rgba(34, 211, 238, 0.25), transparent 45%),
+          var(--bg-body);
+        color: var(--text-primary);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        padding: 32px 16px;
+      }
+
+      .page {
+        max-width: 1080px;
+        margin: auto;
+        background: var(--bg-page);
+        border-radius: 28px;
+        padding: 36px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 35px 120px -40px rgba(32, 135, 228, 0.42);
+      }
+
+      .resume {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 32px;
+      }
+
+      .sidebar {
+        background: rgba(33, 27, 71, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 24px;
+        padding: 32px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .sidebar::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 20% -5%, rgba(96, 165, 250, 0.55), transparent 55%);
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      .sidebar > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        text-align: center;
+      }
+
+      .avatar img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 26px;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 25px 60px -25px rgba(96, 165, 250, 0.55);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        background: linear-gradient(135deg, rgba(96, 165, 250, 0.22), rgba(34, 211, 238, 0.22));
+        color: var(--text-primary);
+      }
+
+      .identity h1 {
+        margin: 0;
+        font-family: "Raleway", "Inter", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .identity p {
+        margin: 8px 0 0;
+        font-size: 14px;
+        color: var(--text-soft);
+      }
+
+      .contact-list,
+      .sidebar-list {
+        display: grid;
+        gap: 14px;
+        font-size: 14px;
+      }
+
+      .contact-item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        color: var(--text-muted);
+      }
+
+      .contact-item span {
+        font-size: 0.9rem;
+      }
+
+      .contact-item a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .pill-section h3 {
+        margin: 0 0 16px;
+        font-size: 13px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      .pill-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .pill-list strong {
+        display: block;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--text-muted);
+        margin-bottom: 4px;
+      }
+
+      .pill-list span {
+        display: inline-block;
+        font-size: 13px;
+        color: var(--text-soft);
+        line-height: 1.4;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .section-card {
+        background: var(--bg-card);
+        border-radius: 24px;
+        padding: 28px 32px;
+        border: 1px solid var(--border);
+        box-shadow: 0 18px 60px -35px rgba(79, 70, 229, 0.4);
+      }
+
+      .section-card h2 {
+        margin: 0 0 18px;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+      }
+
+      .section-card p {
+        margin: 0;
+        color: var(--text-soft);
+        font-size: 15px;
+      }
+
+      .experience-grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      .experience-item {
+        background: var(--bg-card-light);
+        border-radius: 18px;
+        padding: 22px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .experience-item header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+
+      .experience-role {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin: 0;
+      }
+
+      .experience-meta {
+        display: flex;
+        gap: 12px;
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent-strong);
+      }
+
+      .experience-item ul {
+        list-style: none;
+        margin: 16px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .experience-item li {
+        position: relative;
+        padding-left: 18px;
+      }
+
+      .experience-item li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: var(--accent-strong);
+        opacity: 0.85;
+      }
+
+      .timeline {
+        border-left: 2px solid rgba(96, 165, 250, 0.3);
+        display: grid;
+        gap: 24px;
+        padding-left: 28px;
+        margin: 18px 0 0;
+      }
+
+      .timeline-entry {
+        position: relative;
+        padding-left: 4px;
+      }
+
+      .timeline-entry::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #60a5fa, #22d3ee);
+        left: -34px;
+        top: 6px;
+        box-shadow: 0 0 0 6px rgba(96, 165, 250, 0.12);
+      }
+
+      .timeline-entry h3 {
+        margin: 0;
+        font-size: 16px;
+        color: var(--text-primary);
+      }
+
+      .timeline-entry p {
+        margin: 6px 0 0;
+        font-size: 14px;
+      }
+
+      .timeline-entry ul {
+        margin: 12px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 8px;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .timeline-entry li {
+        position: relative;
+        padding-left: 16px;
+      }
+
+      .timeline-entry li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
+
+      .two-column {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .info-box {
+        background: rgba(41, 36, 82, 0.65);
+        border-radius: 18px;
+        padding: 20px 22px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: grid;
+        gap: 12px;
+      }
+
+      .info-box strong {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .info-box span {
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 980px) {
+        body {
+          padding: 24px 12px;
+        }
+
+        .page {
+          padding: 28px 24px;
+        }
+
+        .resume {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 24px;
+        }
+
+        .sidebar > * {
+          flex: 1 1 320px;
+        }
+
+        .avatar {
+          align-items: flex-start;
+        }
+
+        .avatar img {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+          padding: 0;
+        }
+
+        .page {
+          box-shadow: none;
+          border-radius: 0;
+          border: none;
+          padding: 18px 24px;
+          background: #f9fafc;
+        }
+
+        .resume {
+          gap: 20px;
+        }
+
+        .sidebar,
+        .section-card,
+        .info-box,
+        .experience-item {
+          background: #ffffff;
+          color: #111827;
+          border: 1px solid #d1d5db;
+          box-shadow: none;
+        }
+
+        .badge {
+          background: rgba(59, 130, 246, 0.1);
+          color: #1f2937;
+        }
+
+        .timeline {
+          border-color: #9ca3af;
+        }
+
+        .timeline-entry::before {
+          box-shadow: none;
+        }
+      }
+    </style>
+    <script>
+      window.addEventListener("message", (event) => {
+        if (event.data === "print-cv") {
+          window.print();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="resume">
+        <aside class="sidebar">
+          <div class="avatar">
+            <img src="../img/profil.png" alt="Portrait de Lem Israel Aroukoume" />
+            <div class="identity">
+              <div class="badge">Ingénieur Full-Stack</div>
+              <h1>Lem Israel Aroukoume</h1>
+              <p>
+                Développeur full-stack avec 4 ans d’expérience, spécialisé dans les solutions web & mobiles modernes.
+              </p>
+            </div>
+          </div>
+
+          <div class="pill-section">
+            <h3>Contact</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                📧 <a href="mailto:aroukoumeisrael@gmail.com">aroukoumeisrael@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                📞 <a href="tel:+22655104687">+226 55 10 46 87</a>
+              </div>
+              <div class="contact-item">
+                🌐 <a href="https://shallshadows.github.io/portfolio/">shallshadows.github.io/portfolio/</a>
+              </div>
+              <div class="contact-item">
+                💻 <a href="https://github.com/SHALLSHADOWS">github.com/SHALLSHADOWS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pill-section">
+            <h3>Compétences techniques</h3>
+            <div class="pill-list">
+              <div>
+                <strong>Langages</strong>
+                <span>C#, JavaScript, TypeScript, Python, Java, SQL, PHP</span>
+              </div>
+              <div>
+                <strong>Backend</strong>
+                <span>ASP.NET Core, Spring Boot, Flask, FastAPI, Entity Framework Core, JPA/Hibernate</span>
+              </div>
+              <div>
+                <strong>Frontend & Mobile</strong>
+                <span>React, Next.js, .NET MAUI, React Native, Vue.js</span>
+              </div>
+              <div>
+                <strong>Base de données</strong>
+                <span>SQL Server, PostgreSQL, MySQL, SQLite, MongoDB</span>
+              </div>
+              <div>
+                <strong>Architecture</strong>
+                <span>Repository, Service Layer, DTO, Microservices, REST, Claims-based Auth</span>
+              </div>
+              <div>
+                <strong>IA / ML</strong>
+                <span>TensorFlow, PyTorch, OpenCV, Tesseract OCR</span>
+              </div>
+              <div>
+                <strong>DevOps</strong>
+                <span>GitHub Actions, Docker, Azure, CI/CD, Monitoring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pill-section">
+            <h3>Soft skills & langues</h3>
+            <div class="pill-list">
+              <div>
+                <strong>Soft skills</strong>
+                <span>Communication, gestion des parties prenantes, résolution de problèmes, autonomie</span>
+              </div>
+              <div>
+                <strong>Langues</strong>
+                <span>Français (courant), Anglais (intermédiaire)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pill-section">
+            <h3>Certifications</h3>
+            <div class="pill-list">
+              <div>
+                <strong>FreeCodeCamp x Microsoft</strong>
+                <span>Foundational C# with Microsoft Developer Certification</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="content">
+          <section class="section-card">
+            <h2>Résumé</h2>
+            <p>
+              Développeur full-stack expérimenté dans la conception d’applications web & mobiles, les architectures
+              robustes (Microsoft, Java, Python, JavaScript/TypeScript) et l’intégration de services tiers.
+              Passionné par les solutions scalables, l’automatisation et l’accompagnement produit de bout en bout,
+              avec des pratiques DevOps et CI/CD éprouvées.
+            </p>
+          </section>
+
+          <section class="section-card">
+            <h2>Expérience professionnelle</h2>
+            <div class="experience-grid">
+              <div class="experience-item">
+                <header>
+                  <p class="experience-role">Développeur Full-Stack</p>
+                  <div class="experience-meta">
+                    <span>DoonyaLabs</span>
+                    <span>2024 — présent</span>
+                  </div>
+                </header>
+                <p>
+                  Pilotage de produits web et mobiles avec architectures complètes (React, Next.js, TypeScript, Spring
+                  Boot, ASP.NET Core), intégration blockchain, cartographie avancée et coordination d’équipes agiles.
+                </p>
+                <ul>
+                  <li>Applications full-stack modernes et design systems réutilisables.</li>
+                  <li>APIs REST sécurisées, automatisations et intégrations tierces.</li>
+                  <li>Expériences immobilières et cartographiques temps réel.</li>
+                  <li>Organisation agile, coaching technique, pilotage qualité.</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <header>
+                  <p class="experience-role">Développeur Full-Stack Indépendant</p>
+                  <div class="experience-meta">
+                    <span>TEM DEV</span>
+                    <span>2021 — 2023</span>
+                  </div>
+                </header>
+                <p>
+                  Conception et livraison de solutions sur mesure (web, mobile, APIs) du cadrage au déploiement,
+                  incluant e-commerce, intégrations tierces et automatisations métier.
+                </p>
+                <ul>
+                  <li>Gestion bout-en-bout : analyse, architecture, développement, déploiement.</li>
+                  <li>APIs RESTful, intégrations third-party et automatisations métiers.</li>
+                  <li>Applications mobiles multiplateformes (.NET MAUI, React Native).</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card">
+            <h2>Missions freelance majeures</h2>
+            <div class="timeline">
+              <div class="timeline-entry">
+                <h3>House Call Pro — Application de dispatching (2022-2023)</h3>
+                <p>
+                  Mission complète : backend ASP.NET Core + application mobile multiplateforme pour dispatch
+                  intelligent, notifications en temps réel et automatisations.
+                </p>
+                <ul>
+                  <li>Architecture modulaire (Repository, Service Layer) — erreurs réduites de 30%.</li>
+                  <li>Auth JWT avancée, permissions fines, génération de PDF automatisés.</li>
+                  <li>Notifications Firebase/Azure, pipeline CI/CD GitHub Actions, analytics live.</li>
+                </ul>
+              </div>
+
+              <div class="timeline-entry">
+                <h3>Suite KYC — Vérification d’identité (2023)</h3>
+                <p>
+                  Plateforme front + backend + IA/ML pour la capture documentaire, OCR, face-matching et détection de
+                  fraude.
+                </p>
+                <ul>
+                  <li>Interface React pour capture/preview, UX responsive multi-device.</li>
+                  <li>API FastAPI/Flask sécurisée pour orchestrer le traitement de données PII.</li>
+                  <li>Pipeline IA (TensorFlow, PyTorch, Tesseract) pour liveness et détection fraude.</li>
+                </ul>
+              </div>
+
+              <div class="timeline-entry">
+                <h3>Booking Flights & Formations (2023)</h3>
+                <p>
+                  Plateforme React avec recherche avancée, intégrations GDS, paiements sécurisés, génération de
+                  factures et disponibilités temps réel.
+                </p>
+              </div>
+
+              <div class="timeline-entry">
+                <h3>Application e-commerce mobile (2023)</h3>
+                <p>
+                  App React Native + backend Spring Boot / ASP.NET Core pour gestion panier, checkout sécurisé,
+                  notifications push et suivi commandes.
+                </p>
+              </div>
+
+              <div class="timeline-entry">
+                <h3>Helpdesk étudiants (2022-2023)</h3>
+                <p>
+                  Suite ticketing React + Spring Boot avec dashboards, analytics et workflows sécurisés pour support
+                  académique.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card">
+            <h2>Éducation</h2>
+            <div class="two-column">
+              <div class="info-box">
+                <strong>Master 1 (en cours)</strong>
+                <span>Université de l’Unité Africaine (ex-IAM) — Août 2024 - Juin 2025</span>
+              </div>
+              <div class="info-box">
+                <strong>Licence Professionnelle Génie Logiciel</strong>
+                <span>Université de l’Unité Africaine (ex-IAM) — Septembre 2020 - Juin 2023</span>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+

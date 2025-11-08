@@ -7,10 +7,19 @@ import { useTranslation } from "react-i18next";
 
 export function CvSection(): JSX.Element {
   const [previewOpen, setPreviewOpen] = useState(false);
-  const iframeRef = useRef<HTMLIFrameElement | null>(null);
+  const downloadIframeRef = useRef<HTMLIFrameElement | null>(null);
   const { t } = useTranslation();
 
-  const cvUrl = useMemo(() => {
+  const previewUrl = useMemo(() => {
+    const base = import.meta.env.BASE_URL;
+    if (base.startsWith("http")) {
+      return new URL("cv/index-detailed.html", base).toString();
+    }
+    const origin = typeof window !== "undefined" ? window.location.origin : "";
+    return `${origin}${base.replace(/\/?$/, "/")}cv/index-detailed.html`;
+  }, []);
+
+  const downloadUrl = useMemo(() => {
     const base = import.meta.env.BASE_URL;
     if (base.startsWith("http")) {
       return new URL("cv/index.html", base).toString();
@@ -28,13 +37,13 @@ export function CvSection(): JSX.Element {
   }, []);
 
   const handleDownloadPdf = useCallback(() => {
-    const iframe = iframeRef.current;
+    const iframe = downloadIframeRef.current;
     if (iframe?.contentWindow) {
       iframe.contentWindow.postMessage("print-cv", "*");
     } else {
-      window.open(cvUrl, "_blank", "noopener,noreferrer");
+      window.open(downloadUrl, "_blank", "noopener,noreferrer");
     }
-  }, [cvUrl]);
+  }, [downloadUrl]);
 
   const insights = t("cvSection.insightsList", { returnObjects: true }) as string[];
 
@@ -84,12 +93,7 @@ export function CvSection(): JSX.Element {
               </div>
             </div>
             <div className="h-[520px] overflow-hidden">
-              <iframe
-                ref={iframeRef}
-                title={t("cvSection.previewTitle")}
-                src={cvUrl}
-                className="h-full w-full border-0 bg-white"
-              />
+              <iframe title={t("cvSection.previewTitle")} src={previewUrl} className="h-full w-full border-0 bg-white" />
             </div>
           </div>
 
@@ -117,7 +121,14 @@ export function CvSection(): JSX.Element {
         </motion.div>
       </Container>
 
-      <CvPreviewDialog open={previewOpen} onClose={handleClosePreview} cvUrl={cvUrl} />
+      <iframe
+        ref={downloadIframeRef}
+        src={downloadUrl}
+        title="cv-download"
+        className="hidden"
+      />
+
+      <CvPreviewDialog open={previewOpen} onClose={handleClosePreview} cvUrl={previewUrl} />
     </section>
   );
 }
