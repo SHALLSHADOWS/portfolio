@@ -1,0 +1,203 @@
+{
+  "language": {
+    "fr": "FR",
+    "en": "EN"
+  },
+  "nav": {
+    "expertise": "Expertise",
+    "projects": "Projets",
+    "process": "Process",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "header": {
+    "bookMission": "Bookez une mission"
+  },
+  "hero": {
+    "availability": "Disponible pour missions freelance",
+    "heading": "Créons des expériences web premium qui convertissent.",
+    "description": "Je conçois et réalise des plateformes web sur-mesure en combinant design UX, front-end réactif et APIs scalables. Mon approche associe un delivery rapide, une obsession du détail et un accompagnement produit complet.",
+    "primaryCta": "Découvrir mes projets",
+    "secondaryCta": "Bookez un échange",
+    "portraitAlt": "Portrait généré de Lem Israel Aroukoume",
+    "card": {
+      "role": "Ingénieur full-stack",
+      "focus": "Focus actuel",
+      "focusValue": "Plateformes SaaS et PWA ambitieuses",
+      "location": "Ouagadougou · Remote international"
+    }
+  },
+  "profile": {
+    "title": "Ingénieur full-stack & product builder"
+  },
+  "expertise": {
+    "title": "Expertise full-stack orientée produit",
+    "description": "Je combine un savoir-faire design et technique pour livrer des expériences cohérentes, maintenables et alignées sur les objectifs business.",
+    "areas": {
+      "productWeb": {
+        "title": "Produits web premium",
+        "description": "Applications React/Next.js, design system Tailwind, performance Lighthouse, accessibilité WCAG.",
+        "points": [
+          "State management avancé",
+          "Design system modulable",
+          "Tests E2E et CI/CD"
+        ]
+      },
+      "backendApi": {
+        "title": "APIs & Backend",
+        "description": "APIs FastAPI/Node scalables, authentification JWT, intégrations tierces et automatisations.",
+        "points": [
+          "Architecture hexagonale",
+          "Monitoring & observabilité",
+          "Optimisation SQL"
+        ]
+      },
+      "deliveryOps": {
+        "title": "Delivery & DevOps",
+        "description": "Pipelines GitHub Actions, déploiement cloud (Azure, Supabase), supervision et alerting.",
+        "points": [
+          "Métriques produit",
+          "Infrastructure as Code",
+          "Documentation solide"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets phares",
+    "description": "Une sélection de missions qui illustrent ma capacité à piloter un produit complet : discovery, design, développement, opérations et accompagnement.",
+    "button": "Tous les projets",
+    "cta": {
+      "preview": "Voir l’aperçu",
+      "openFigma": "Ouvrir dans Figma"
+    },
+    "items": {
+      "houseDispatchPro": {
+        "title": "House Dispatch Pro",
+        "subtitle": "Plateforme SaaS de dispatching technique",
+        "result": "Réduction des délais d’intervention de 30%"
+      },
+      "idVerificationSuite": {
+        "title": "ID Verification Suite",
+        "subtitle": "Pipeline KYC avec OCR & IA",
+        "result": "Détection de fraude automatisée et conformité RGPD"
+      },
+      "bookingFlightsTraining": {
+        "title": "Booking Flights & Training",
+        "subtitle": "Expérience unifiée pour réservation multi-services",
+        "result": "Parcours mobile designé avec payment flow optimisé"
+      },
+      "ecommerceAppDesign": {
+        "title": "E-commerce Mobile App",
+        "subtitle": "Design system mobile-first pour marketplace",
+        "result": "Kit UI complet (30+ écrans) et UX de conversion"
+      }
+    }
+  },
+  "highlights": {
+    "items": {
+      "projectsDelivered": {
+        "label": "Projets livrés",
+        "value": "25+",
+        "description": "Applications web & mobiles en production"
+      },
+      "performanceGain": {
+        "label": "Gain de performance",
+        "value": "-35%",
+        "description": "Temps de chargement moyen après optimisation"
+      },
+      "satisfaction": {
+        "label": "Satisfaction client",
+        "value": "4.9/5",
+        "description": "Feedbacks sur missions long terme"
+      }
+    }
+  },
+  "process": {
+    "title": "Un process clair pour livrer vite et bien",
+    "description": "Collaboration fluide, visibilité totale sur l’avancement et focus constant sur les résultats mesurables.",
+    "steps": {
+      "discovery": {
+        "title": "Diagnostic & cadrage",
+        "description": "Immersion rapide, identification des enjeux, ateliers de priorisation et définition de la feuille de route produit/tech."
+      },
+      "architecture": {
+        "title": "Design & architecture",
+        "description": "Wireframes, UI system, choix technologiques, structuration des domaines et des workflows techniques."
+      },
+      "delivery": {
+        "title": "Delivery itératif",
+        "description": "Sprints courts, revue continue, automatisation des tests et CI/CD. Mise en production sécurisée et monitoring."
+      },
+      "handoff": {
+        "title": "Transfert & évolution",
+        "description": "Documentation, handover équipe interne, instrumentation analytics, plan d’amélioration continue."
+      }
+    }
+  },
+  "cvSection": {
+    "title": "Mon CV détaillé",
+    "description": "Découvrez mon parcours complet, mes expériences clés et mes réalisations détaillées. Prévisualisez le document ou exportez-le instantanément en PDF.",
+    "previewTitle": "CV — Lem Israel Aroukoume (aperçu rapide)",
+    "openLabel": "Ouvrir",
+    "downloadLabel": "Exporter en PDF",
+    "panelBadge": "Highlights CV",
+    "panelTitle": "Pourquoi ce document est impactant",
+    "panelDescription": "Un aperçu détaillé des projets, responsabilités et résultats livrés autour de la construction de plateformes web et mobiles à fort enjeu business.",
+    "insightsList": [
+      "Synthèse claire de 4 années de missions en freelance et en équipe produit (React, FastAPI, .NET, DevOps).",
+      "Focus sur l’impact (gains de performance, amélioration des process, automatisations).",
+      "Compétences transverses : architecture, design system, data pipelines, CI/CD, IA.",
+      "Expériences structurées pour répondre aux attentes des clients et agences tech."
+    ]
+  },
+  "cvDialog": {
+    "title": "CV — Lem Israel Aroukoume (prévisualisation)",
+    "close": "Fermer la fenêtre"
+  },
+  "contact": {
+    "title": "Prêt à accélérer votre produit ?",
+    "description": "Racontez-moi vos enjeux (refonte, MVP, optimisation). Je reviendrai vers vous en moins de 24h avec une proposition claire.",
+    "emailCta": "Écrire un e-mail",
+    "availability": "Disponibilité actuelle : 3 jours / semaine.",
+    "location": "Basé à Ouagadougou · Remote international.",
+    "links": {
+      "calendly": "Réserver un créneau",
+      "whatsapp": "Parler sur WhatsApp",
+      "github": "Voir GitHub"
+    },
+    "nextStep": {
+      "badge": "Prochaine étape",
+      "title": "Session de cadrage gratuite",
+      "description": "30 minutes pour explorer votre produit, identifier les quick wins et proposer un plan de collaboration.",
+      "listLabel": "Déroulé :",
+      "steps": [
+        "Comprendre vos objectifs business",
+        "Audit express de l’existant",
+        "Feuille de route priorisée et estimation"
+      ]
+    },
+    "form": {
+      "badge": "Me contacter",
+      "title": "Envoyez-moi un message direct",
+      "description": "Ce formulaire envoie un e-mail automatique via formsubmit.co (aucun backend à gérer).",
+      "nameLabel": "Votre nom",
+      "namePlaceholder": "Nom complet",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "votre.email@entreprise.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Parlez-moi de votre projet, de vos objectifs ou de vos contraintes.",
+      "submit": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "tagline": "Développeur full-stack – React, FastAPI, DevOps.",
+    "availability": "Disponible pour des missions freelance et accompagnement produit.",
+    "deployed": "Portfolio statique déployé sur GitHub Pages.",
+    "rights": "Tous droits réservés."
+  },
+  "actions": {
+    "close": "Fermer"
+  }
+}
+

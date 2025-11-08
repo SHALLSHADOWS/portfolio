@@ -1,0 +1,203 @@
+{
+  "language": {
+    "fr": "FR",
+    "en": "EN"
+  },
+  "nav": {
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "process": "Process",
+    "cv": "Resume",
+    "contact": "Contact"
+  },
+  "header": {
+    "bookMission": "Book a mission"
+  },
+  "hero": {
+    "availability": "Available for freelance partnerships",
+    "heading": "Let’s craft premium web experiences that convert.",
+    "description": "I design and ship custom web platforms by combining UX thinking, responsive front-end, and scalable APIs. My approach blends fast delivery, an obsession for detail, and end-to-end product guidance.",
+    "primaryCta": "Browse my work",
+    "secondaryCta": "Schedule a call",
+    "portraitAlt": "AI-generated portrait of Lem Israel Aroukoume",
+    "card": {
+      "role": "Full-stack engineer",
+      "focus": "Current focus",
+      "focusValue": "Ambitious SaaS platforms & PWAs",
+      "location": "Ouagadougou · Remote worldwide"
+    }
+  },
+  "profile": {
+    "title": "Full-stack engineer & product builder"
+  },
+  "expertise": {
+    "title": "Product-driven full-stack expertise",
+    "description": "I blend design and engineering skills to deliver cohesive, maintainable experiences aligned with business goals.",
+    "areas": {
+      "productWeb": {
+        "title": "Premium web products",
+        "description": "React/Next.js apps, Tailwind design systems, Lighthouse performance, WCAG accessibility.",
+        "points": [
+          "Advanced state management",
+          "Composable design systems",
+          "E2E testing & CI/CD"
+        ]
+      },
+      "backendApi": {
+        "title": "APIs & backend",
+        "description": "Scalable FastAPI/Node services, JWT authentication, third-party integrations and automation.",
+        "points": [
+          "Hexagonal architecture",
+          "Monitoring & observability",
+          "SQL performance tuning"
+        ]
+      },
+      "deliveryOps": {
+        "title": "Delivery & DevOps",
+        "description": "GitHub Actions pipelines, cloud deployments (Azure, Supabase), supervision and alerting.",
+        "points": [
+          "Product metrics",
+          "Infrastructure as Code",
+          "Thorough documentation"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Selected projects",
+    "description": "A snapshot of missions that showcase my ability to drive a product end-to-end: discovery, design, engineering, operations, and continuous support.",
+    "button": "All projects",
+    "cta": {
+      "preview": "Preview designs",
+      "openFigma": "Open in Figma"
+    },
+    "items": {
+      "houseDispatchPro": {
+        "title": "House Dispatch Pro",
+        "subtitle": "Technician dispatch SaaS platform",
+        "result": "Cut intervention delays by 30%"
+      },
+      "idVerificationSuite": {
+        "title": "ID Verification Suite",
+        "subtitle": "KYC pipeline with OCR & AI",
+        "result": "Automated fraud checks and compliance"
+      },
+      "bookingFlightsTraining": {
+        "title": "Booking Flights & Training",
+        "subtitle": "Unified booking for flights and coaching",
+        "result": "Mobile-first journey with optimised checkout flow"
+      },
+      "ecommerceAppDesign": {
+        "title": "E-commerce Mobile App",
+        "subtitle": "Mobile-first marketplace design system",
+        "result": "Full UI kit (30+ screens) and conversion-oriented UX"
+      }
+    }
+  },
+  "highlights": {
+    "items": {
+      "projectsDelivered": {
+        "label": "Projects shipped",
+        "value": "25+",
+        "description": "Web & mobile apps live in production"
+      },
+      "performanceGain": {
+        "label": "Performance gain",
+        "value": "-35%",
+        "description": "Average page-load time improvement"
+      },
+      "satisfaction": {
+        "label": "Client satisfaction",
+        "value": "4.9/5",
+        "description": "Long-term partnership feedback"
+      }
+    }
+  },
+  "process": {
+    "title": "A clear, reliable delivery process",
+    "description": "Smooth collaboration, full transparency on progress, and measurable outcomes at every milestone.",
+    "steps": {
+      "discovery": {
+        "title": "Diagnosis & alignment",
+        "description": "Rapid immersion, goal mapping, prioritisation workshops, and product/tech roadmap definition."
+      },
+      "architecture": {
+        "title": "Design & architecture",
+        "description": "Wireframes, design systems, technology choices, and technical workflow structuring."
+      },
+      "delivery": {
+        "title": "Iterative delivery",
+        "description": "Short sprints, continuous reviews, automated testing & CI/CD. Secure releases with monitoring."
+      },
+      "handoff": {
+        "title": "Handoff & evolution",
+        "description": "Documentation, internal team transfer, analytics instrumentation, continuous improvement plan."
+      }
+    }
+  },
+  "cvSection": {
+    "title": "My detailed resume",
+    "description": "Explore my full journey, key engagements, and measurable achievements. Preview the document or export it instantly as PDF.",
+    "previewTitle": "Resume — Lem Israel Aroukoume (quick preview)",
+    "openLabel": "Open",
+    "downloadLabel": "Export PDF",
+    "panelBadge": "Resume highlights",
+    "panelTitle": "Why this document matters",
+    "panelDescription": "A focused breakdown of projects, responsibilities, and business outcomes when building high-stakes web and mobile platforms.",
+    "insightsList": [
+      "Concise summary of 4 years delivering as freelancer and embedded product teammate (React, FastAPI, .NET, DevOps).",
+      "Highlights measurable impact (performance boosts, process automation, productivity gains).",
+      "Cross-functional skills: architecture, design systems, data pipelines, CI/CD, applied AI.",
+      "Structured to match expectations from agencies and product-led teams."
+    ]
+  },
+  "cvDialog": {
+    "title": "Resume — Lem Israel Aroukoume (preview)",
+    "close": "Close modal"
+  },
+  "contact": {
+    "title": "Ready to accelerate your product?",
+    "description": "Tell me about your goals (redesign, MVP, optimisation). I’ll reply within 24h with a clear proposal.",
+    "emailCta": "Send an email",
+    "availability": "Current availability: 3 days / week.",
+    "location": "Based in Ouagadougou · Remote worldwide.",
+    "links": {
+      "calendly": "Book a slot",
+      "whatsapp": "Chat on WhatsApp",
+      "github": "View GitHub"
+    },
+    "nextStep": {
+      "badge": "Next step",
+      "title": "Free discovery session",
+      "description": "30 minutes to explore your product, spot quick wins, and outline a collaboration plan.",
+      "listLabel": "Agenda:",
+      "steps": [
+        "Understand business objectives",
+        "Quick audit of the current stack",
+        "Prioritised roadmap & estimation"
+      ]
+    },
+    "form": {
+      "badge": "Get in touch",
+      "title": "Drop me a direct message",
+      "description": "This form sends an email through formsubmit.co — no backend needed.",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Full name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your product, goals, or constraints.",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "tagline": "Full-stack developer – React, FastAPI, DevOps.",
+    "availability": "Open to freelance missions and product coaching.",
+    "deployed": "Static portfolio deployed on GitHub Pages.",
+    "rights": "All rights reserved."
+  },
+  "actions": {
+    "close": "Close"
+  }
+}
+
