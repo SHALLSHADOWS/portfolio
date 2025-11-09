@@ -1,12 +1,10 @@
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, Download, ExternalLink } from "lucide-react";
 import { Container } from "../components/ui/Container";
-import { CvPreviewDialog } from "../components/cv/CvPreviewDialog";
 import { useTranslation } from "react-i18next";
 
 export function CvSection(): JSX.Element {
-  const [previewOpen, setPreviewOpen] = useState(false);
   const downloadIframeRef = useRef<HTMLIFrameElement | null>(null);
   const { t } = useTranslation();
 
@@ -26,14 +24,6 @@ export function CvSection(): JSX.Element {
     }
     const origin = typeof window !== "undefined" ? window.location.origin : "";
     return `${origin}${base.replace(/\/?$/, "/")}cv/index.html`;
-  }, []);
-
-  const handleOpenPreview = useCallback(() => {
-    setPreviewOpen(true);
-  }, []);
-
-  const handleClosePreview = useCallback(() => {
-    setPreviewOpen(false);
   }, []);
 
   const handleDownloadPdf = useCallback(() => {
@@ -74,14 +64,15 @@ export function CvSection(): JSX.Element {
             <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
               <p className="text-sm font-medium text-slate-200">{t("cvSection.previewTitle")}</p>
               <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={handleOpenPreview}
+                <a
+                  href={previewUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-slate-200 transition hover:border-white/30 hover:bg-white/10"
                 >
                   <ExternalLink className="h-3.5 w-3.5" />
                   {t("cvSection.openLabel")}
-                </button>
+                </a>
                 <button
                   type="button"
                   onClick={handleDownloadPdf}
@@ -92,8 +83,25 @@ export function CvSection(): JSX.Element {
                 </button>
               </div>
             </div>
-            <div className="h-[520px] overflow-hidden">
-              <iframe title={t("cvSection.previewTitle")} src={previewUrl} className="h-full w-full border-0 bg-white" />
+            <div className="space-y-6 px-6 pb-8 pt-6 text-sm text-slate-200">
+              <p>
+                {t("cvSection.description")}
+                &nbsp;
+                <strong>{t("cvSection.openLabel")}</strong>
+                &nbsp;pour consulter la version détaillée ou utilisez{" "}
+                <strong>{t("cvSection.downloadLabel")}</strong> pour générer la version une page (PDF A4).
+              </p>
+              <div className="grid gap-3 text-xs text-slate-400">
+                <p className="font-semibold uppercase tracking-[0.28em] text-slate-300">{t("cvSection.panelBadge")}</p>
+                <ul className="grid gap-2 text-slate-300">
+                  {insights.map((insight) => (
+                    <li key={insight} className="flex items-center gap-3">
+                      <CheckCircle2 aria-hidden className="h-4 w-4 text-emerald-300" />
+                      {insight}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -127,8 +135,6 @@ export function CvSection(): JSX.Element {
         title="cv-download"
         className="hidden"
       />
-
-      <CvPreviewDialog open={previewOpen} onClose={handleClosePreview} cvUrl={previewUrl} />
     </section>
   );
 }
